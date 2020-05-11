@@ -3,7 +3,11 @@ project(PF_Endian VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
+option(PFENDIAN_BUILT_TESTS "Builds all unit tests" OFF)
+
+add_subdirectory(ext)
 add_subdirectory(src)
 
-add_subdirectory(ext/PF_Test)
-add_subdirectory(tests)
+if (${PFENDIAN_BUILT_TESTS})
+    add_subdirectory(tests)
+endif()
