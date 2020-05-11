@@ -29,10 +29,10 @@ target_link_libraries(PF_Endian_UnitTests PF_Endian)
 4. Call the various endian swap functions to do the swap.
 
 ```cpp
-    uint16_t uval16_swapped = PFENDIAN_SWAP_16(uval16);
-    int16_t val16_swapped = PFENDIAN_SWAP_16(val16);
-    uint32_t uval32_swapped = PFENDIAN_SWAP_32(uval32);
-    int32_t val32_swapped = PFENDIAN_SWAP_32(val32);
-    uint64_t uval64_swapped = PFENDIAN_SWAP_64(uval64);
-    int64_t val64_swapped = PFENDIAN_SWAP_64(val64);
+uint16_t uval16_swapped = PFENDIAN_SWAP_16(uval16);
+int16_t val16_swapped = PFENDIAN_SWAP_16(val16);
+uint32_t uval32_swapped = PFENDIAN_SWAP_32(uval32);
+int32_t val32_swapped = PFENDIAN_SWAP_32(val32);
+uint64_t uval64_swapped = PFENDIAN_SWAP_64(uval64);
+int64_t val64_swapped = PFENDIAN_SWAP_64(val64);
 ```
