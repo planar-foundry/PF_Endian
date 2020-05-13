@@ -24,7 +24,7 @@ namespace pf::endian
 #endif
 
 // The underscore variants can be used if you need to endian swap for reasons of your own.
-#if defined (WIN32)
+#if defined(WIN32)
     #define _PFENDIAN_SWAP_16(x) _byteswap_ushort(x)
     #define _PFENDIAN_SWAP_32(x) _byteswap_ulong(x)
     #define _PFENDIAN_SWAP_64(x) _byteswap_uint64(x)
